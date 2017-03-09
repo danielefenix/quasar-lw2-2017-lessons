@@ -1,0 +1,35 @@
+.calcolatrice{
+    width: 206px;
+    height: 307px;
+    margin-left: 50px;
+    background-color: lightgray;
+    margin-top: 50px;
+    
+}
+.bottone{
+    width: 186px;
+    margin-top: 16px;
+    border-radius: 0px;
+    margin-left: 10px;
+    border: 0px;
+    margin-right: 10px;
+}
+
+.botmarg{
+    
+    margin-left: 15px;
+    margin-right: 10px;
+    border-radius: 0px;
+}
+
+.botspaz{
+    margin-right: 10px;
+    border-radius: 0px;
+}
+
+.pad{
+    padding-right: 15px;
+}
+.btspz{
+    padding-left: 10px;
+}
