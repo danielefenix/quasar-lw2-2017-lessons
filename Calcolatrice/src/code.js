@@ -1,12 +1,25 @@
-function n(op)
-{
-if(document.getElementById("risultato").value=="0" || document.getElementById("risultato").value==null)
-{document.getElementById("risultato").value=op;}
-else{document.getElementById("risultato").value+=op;}
+var risultato = document.getElementById("risultato");
+var mettivirgola = document.getElementById(".");
+var zero = document.getElementById("0");
+
+function n(op) {
+    if (risultato.value == "0" || risultato.value == null) {
+        risultato.value = op;
+    }
+    else {
+        risultato.value += op;
+    }
 }
 
-function risultato() { document.getElementById("risultato").value=eval(document.getElementById("risultato").value); }
+function calcola() {
+    risultato.value = eval(risultato.value);
+}
 
-function azzera() { document.getElementById("risultato").value="0"; }
+function azzera() {
+    risultato.value = "0";
+}
 
-
+function virgola() {
+    var lavirgola = zero + mettivirgola;
+    risultato.value = lavirgola++;
+}
