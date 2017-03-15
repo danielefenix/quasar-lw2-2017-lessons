@@ -11,39 +11,40 @@
     <table class="calcolatrice">
         <tr>
             <td>
-                <input class=" btn btn-default bottone" type="text" value="0" id="risultato" readonly="readonly"> </td>
+                <input class=" btn btn-default display" type="text" value="0" id="risultato" readonly="readonly"> </td>
         </tr>
         <tr>
             <td>
-                <input class="btn btn-primary botmarg " type="submit" value="×" id="*" OnClick="n(this.id)">
-                <input class="btn btn-primary botspaz" type="submit" value="÷" id="/" OnClick="n(this.id)">
-                <input class="btn btn-primary botspaz" type="submit" value="+" id="+" OnClick="n(this.id)">
-                <input class="btn btn-primary botspaz pad " type="submit" value="-" id="-" OnClick="n(this.id)"> </td>
+                <input class="btn btn-primary botspaz botmarg" type="submit" value="1" id="1" OnClick="n(this.id)">
+                <input class="btn btn-primary botspaz" type="submit" value="2" id="2" OnClick="n(this.id)">
+                <input class="btn btn-primary botspaz" type="submit" value="3" id="3" OnClick="n(this.id)">
+                <input class="btn btn-primary botspaz" type="submit" value="C" id="c" OnClick="azzera();"> </td>
         </tr>
         <tr>
             <td>
-                <input class="btn btn-primary botspaz pad boh" type="sumbit" value="." id="." OnClick="n(this.id)">
-                <input class="btn btn-primary botspaz" type="submit" value="C" OnClick="azzera();">
-                <input class="btn btn-primary botspaz" type="submit" value="1" id="1" OnClick="n(this.id)">
-                <input class="btn btn-primary botspaz" type="submit" value="2" id="2" OnClick="n(this.id)"> </td>
-        </tr>
-        <tr>
-            <td>
-                <input class="btn btn-primary botmarg botspaz marg" type="submit" value="3" id="3" OnClick="n(this.id)">
-                <input class="btn btn-primary botspaz" type="submit" value="4" id="4" OnClick="n(this.id)">
+                <input class="btn btn-primary botmarg botspaz" type="submit" value="4" id="4" OnClick="n(this.id)">
                 <input class="btn btn-primary botspaz" type="submit" value="5" id="5" OnClick="n(this.id)">
-                <input class="btn btn-primary botspaz" type="submit" value="6" id="6" OnClick="n(this.id)"> </td>
+                <input class="btn btn-primary botspaz" type="submit" value="6" id="6" OnClick="n(this.id)">
+                <input class="btn btn-primary botspaz" type="submit" value="+" id="+" OnClick="n(this.id)"> </td>
         </tr>
         <tr>
             <td>
                 <input class="btn btn-primary botspaz botmarg marg" type="submit" value="7" id="7" OnClick="n(this.id)">
                 <input class="btn btn-primary botspaz" type="submit" value="8" id="8" OnClick="n(this.id)">
                 <input class="btn btn-primary botspaz" type="submit" value="9" id="9" OnClick="n(this.id)">
-                <input class="btn btn-primary botspaz" type="submit" value="0" id="0" OnClick="n(this.id)"> </td>
+                <input class="btn btn-primary botspaz" type="submit" value="-" id="-" OnClick="n(this.id)"> </td>
         </tr>
         <tr>
             <td>
-                <input class="btn btn-primary botmarg full" type="submit" value="=" OnClick="calcola();"> </td>
+                <input class="btn btn-primary botmarg botspaz" type="submit" value="0" id="0" OnClick="n(this.id)">
+                <input class="btn btn-primary botspaz" type="sumbit" value="." id="." OnClick="n(this.id)">
+                <input class="btn btn-primary botspaz" type="submit" value="÷" id="/" OnClick="n(this.id)">
+                <input class="btn btn-primary botspaz" type="submit" value="×" id="*" OnClick="n(this.id)"> </td>
+        </tr>
+        <tr>
+            <td>
+                <input class="btn btn-primary uguale botmarg botspaz" type="submit" value="=" OnClick="calcola();">
+                <input class="btn btn-primary back" type="submit" value="back" OnClick="backchar();"> </td>
         </tr>
     </table>
     <script src="src/code.js" type=text/javascript></script>

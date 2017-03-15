@@ -1,48 +1,58 @@
-.calcolatrice{
+.calcolatrice {
     width: 206px;
     height: 307px;
     margin-left: 50px;
-    background-color: lightgray;
+    background-color: black;
     margin-top: 50px;
-    
+    box-shadow: 1px 2px 5px black;
 }
-.bottone{
-    width: 186px;
+
+.display {
+    width: 178px;
     margin-top: 16px;
     border-radius: 0px;
-    margin-left: 10px;
+    margin-left: 15px;
     border: 0px;
     margin-right: 10px;
+    border: 1px solid black;
+    box-shadow: 2px 2px 5px white;
 }
 
-.botmarg{
-    
-    margin-left: 15px;
-    margin-right: 10px;
+.botmarg {
     border-radius: 0px;
-}
-
-.botspaz{
-    margin-right: 10px;
-    border-radius: 0px;
-}
-
-.pad{
-    padding-right: 15px;
-}
-.btspz{
-    padding-left: 10px;
-}
-.boh{
-
-    padding: 0px;
+    border: 1px solid white;
     width: 34px;
-    height: 31px;
+    height: 33px;
+    padding: inherit;
     margin-left: 15px;
 }
-.full{
-    width: 176px;
+
+.botspaz {
+    border-radius: 0px;
+    border: 1px solid white;
+    width: 34px;
+    height: 33px;
+    padding: inherit;
+    margin-right: 10px;
+    box-shadow: 1px 1px 2px white;
 }
-.marg{
-    margin-right: 13px;
+
+.boh {
+    width: 34px;
+    height: 33px;
+    padding: inherit;
+    margin-left: 15px;
+}
+
+.uguale {
+    width: 81px;
+    border: 1px solid white;
+    box-shadow: 1px 1px 2px white;
+}
+
+.back {
+    width: 83px;
+    border-radius: 0px;
+    border: 1px solid white;
+    box-shadow: 1px 1px 2px white;
 }
