@@ -1,0 +1,67 @@
+h1 {
+    margin: 0px;
+    color: white;
+    padding-top: 414px;
+    padding-left: 44px;
+    margin-right: 1357px;
+    line-height: 80px;
+    font-size: 50px;
+}
+
+.titolo {
+    color: white;
+    font-size: 20pt;
+    margin: 0px;
+    float: left;
+    padding-top: 20px;
+    margin-left: 10px;
+}
+
+.sfondo {
+    background-color: black;
+    width: 100%;
+    height: auto;
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+
+.logo {
+    width: 100px;
+    float: left;
+}
+
+.clearfix:before {
+    display: " ";
+    content: none;
+}
+
+.menu {
+    list-style-type: none;
+    float: right;
+    color: white;
+    padding: 0px;
+    margin: 0px;
+    margin-top: 25px;
+    font-size: 15pt;
+}
+
+li {
+    float: left;
+    margin-left: 10px;
+    padding-right: 5px;
+}
+
+li .clearfix:before {
+    display: " ";
+    content: none;
+}
+
+.landing {
+    margin: 0px;
+    width: 100%;
+    height: 862px;
+    background-image: url(src/Landing.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: 100vh;
+}
