@@ -15,7 +15,7 @@
     <!-- Navbar -->
     <div class="container sfondo">
         <nav>
-            <!-- logo --><img src="src/logo.svg" class="logo clearfix" alt="logo.svg">
+            <!-- logo --><img src="src/img/logo.svg" class="logo clearfix" alt="logo.svg">
             <p class="titolo">Travel Best</p>
             <ul class="menu">
                 <li>Home</li>
@@ -33,50 +33,82 @@
     <div class="container-fluid colore">
         <div class="row">
             <div class="col-sm-6 col-md-3">
-                <div class="thumbnail"> <img src="src/Miami.jpg" alt="Miami.jpg">
+                <div class="thumbnail" id="thumb"> <img src="src/img/Miami.jpg" alt="Miami.jpg">
                     <div class="caption">
                         <h3>Miami</h3>
                         <p>Miami è situata sulla costa sud-orientale dello Stato della Florida. La sua area urbana si trova approssimativamente tra il fiume Little River a nord, si estende oltre il Miami River a sud, si affaccia sulla baia di Biscayne ad est e confina nelle Everglades ad ovest.</p>
-                        <p><a href="#" class="btn btn-primary" role="button">Flight</a> </div>
+                        <p>
+                            <button class="btn btn-primary" id="flightmia">Cerca il volo </button>
+                    </div>
                 </div>
             </div>
             <div class="col-sm-6 col-md-3">
-                <div class="thumbnail"> <img src="src/Los%20Angeles.jpg" alt="Los Angeles.jpg">
+                <div class="thumbnail"> <img src="src/img/Los%20Angeles.jpg" alt="Los Angeles.jpg">
                     <div class="caption">
                         <h3>Los Angeles</h3>
                         <p>La municipalità di Los Angeles costituisce, assieme a numerosi altri centri delle contee di Los Angeles e Orange una vastissima area urbana che con oltre 12 milioni di abitanti è la seconda degli USA dopo quella di New York e tra le prime del mondo. Gli abitanti di Los Angeles sono noti anche come Angelenos.</p>
-                        <p><a href="#" class="btn btn-primary" role="button">Flight</a> </div>
+                        <p>
+                            <button class="btn btn-primary" id="flightlax">Cerca il volo </button>
+                    </div>
                 </div>
             </div>
             <div class="col-sm-6 col-md-3">
-                <div class="thumbnail"> <img src="src/Maldive.jpg" alt="Maldive.jpg">
+                <div class="thumbnail"> <img src="src/img/Maldive.jpg" alt="Maldive.jpg">
                     <div class="caption">
                         <h3>Maldive</h3>
-                        <p>I reperti archeologici ritrovati alle Maldive sono stati tutti datati ad epoche successive al 1500 a.C.; si ritiene infatti che in precedenza l'arcipelago fosse disabitato.
-                        Controlla ora i prezzi dei voli</p>
-                        <p><a href="#" class="btn btn-primary" role="button">Flight</a> </div>
+                        <p>I reperti archeologici ritrovati alle Maldive sono stati tutti datati ad epoche successive al 1500 a.C.; si ritiene infatti che in precedenza l'arcipelago fosse disabitato. Controlla ora i prezzi dei voli</p>
+                        <p>
+                            <button class="btn btn-primary" id="flightmal">Cerca il volo </button>
+                    </div>
                 </div>
             </div>
             <div class="col-sm-6 col-md-3">
-                <div class="thumbnail"> <img src="src/Caraibi.jpg" alt="Caraibi.jpg">
+                <div class="thumbnail"> <img src="src/img/Caraibi.jpg" alt="Caraibi.jpg">
                     <div class="caption">
                         <h3>Caraibi</h3>
                         <p>Che dire di loro isole fantastiche cui tutte meritano la visita. Senza contare la fauna marina protetta acque dai colori stupendi e spiaggie bianche che dire tutto perfetto.</p>
-                        <p><a href="#" class="btn btn-primary" role="button">Flight</a> </div>
+                        <p>
+                            <button class="btn btn-primary" id="flightnas">Cerca il volo </button>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+    <div id="user-list">
+        <h3 class="volo">Voli</h3> </div>
     <!-- End Viaggi -->
     <footer>
-    <p class="copyright">&copy; Matteo Altobelli 2017</p>
-    
+        <p class="copyright">&copy; Matteo Altobelli 2017</p>
     </footer>
-    
-    <!-- jQuery -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script type="application/javascript">
-        // File con gli elementi Ajax e Json
+    <!-- jQuery plugin -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.6/handlebars.js"></script>
+    <!-- My Js -->
+    <script src="myfly.js" type="application/javascript"></script>
+    <!-- Tutti gli script per mostrare i voli -->
+    <!-- volomiami -->
+    <script id="volomiami" type="text/x-handlebars-template">
+        <div class="entry">
+            <div class="fly"> <img class="dim" src="img/miafly.png"> </div>
+        </div>
+    </script>
+    <!-- vololax -->
+    <script id="vololax" type="text/x-handlebars-template">
+        <div class="entry">
+            <div class="fly"> <img class="dimlax" src="img/laxfly.PNG"> </div>
+        </div>
+    </script>
+    <!-- volomaldive -->
+    <script id="volomal" type="text/x-handlebars-template">
+        <div class="entry">
+            <div class="fly"> <img class="dimmle" src="img/mlefly.PNG"> </div>
+        </div>
+    </script>
+    <!-- volocaraibi -->
+    <script id="volonas" type="text/x-handlebars-template">
+        <div class="entry">
+            <div class="fly"> <img class="dimnas" src="img/nasfly.PNG"> </div>
+        </div>
     </script>
 </body>
 
