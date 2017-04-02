@@ -1,0 +1,57 @@
+/* line 1, /Users/MELLO/Google Drive/Ineraction Design II/Coding - Salvatore/Gabriele Rapone/AJAX/style/reset.sass */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+/* line 22, /Users/MELLO/Google Drive/Ineraction Design II/Coding - Salvatore/Gabriele Rapone/AJAX/style/reset.sass */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+/* line 29, /Users/MELLO/Google Drive/Ineraction Design II/Coding - Salvatore/Gabriele Rapone/AJAX/style/reset.sass */
+ol, ul {
+  list-style: none; }
+
+/* line 32, /Users/MELLO/Google Drive/Ineraction Design II/Coding - Salvatore/Gabriele Rapone/AJAX/style/reset.sass */
+blockquote, q {
+  quotes: none; }
+
+/* line 35, /Users/MELLO/Google Drive/Ineraction Design II/Coding - Salvatore/Gabriele Rapone/AJAX/style/reset.sass */
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+/* line 40, /Users/MELLO/Google Drive/Ineraction Design II/Coding - Salvatore/Gabriele Rapone/AJAX/style/reset.sass */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* line 44, /Users/MELLO/Google Drive/Ineraction Design II/Coding - Salvatore/Gabriele Rapone/AJAX/style/reset.sass */
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both; }
+
+/* line 49, /Users/MELLO/Google Drive/Ineraction Design II/Coding - Salvatore/Gabriele Rapone/AJAX/style/reset.sass */
+* {
+  box-sizing: border-box; }
+
+/*# sourceMappingURL=reset.css.map */
