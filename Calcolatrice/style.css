@@ -1,0 +1,58 @@
+.calcolatrice {
+    width: 206px;
+    height: 307px;
+    margin-left: 50px;
+    background-color: black;
+    margin-top: 50px;
+    box-shadow: 1px 2px 5px black;
+}
+
+.display {
+    width: 178px;
+    margin-top: 16px;
+    border-radius: 0px;
+    margin-left: 15px;
+    border: 0px;
+    margin-right: 10px;
+    border: 1px solid black;
+    box-shadow: 2px 2px 5px white;
+}
+
+.botmarg {
+    border-radius: 0px;
+    border: 1px solid white;
+    width: 34px;
+    height: 33px;
+    padding: inherit;
+    margin-left: 15px;
+}
+
+.botspaz {
+    border-radius: 0px;
+    border: 1px solid white;
+    width: 34px;
+    height: 33px;
+    padding: inherit;
+    margin-right: 10px;
+    box-shadow: 1px 1px 2px white;
+}
+
+.boh {
+    width: 34px;
+    height: 33px;
+    padding: inherit;
+    margin-left: 15px;
+}
+
+.uguale {
+    width: 81px;
+    border: 1px solid white;
+    box-shadow: 1px 1px 2px white;
+}
+
+.back {
+    width: 83px;
+    border-radius: 0px;
+    border: 1px solid white;
+    box-shadow: 1px 1px 2px white;
+}
