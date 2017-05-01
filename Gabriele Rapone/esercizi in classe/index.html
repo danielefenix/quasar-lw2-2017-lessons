@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>DOM manipulation</title>
+
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+
+<body>
+
+	<!--div class="container">
+		<div class="row">
+			<div class="col-xs-12">
+				<h1>1. Listen to window's scroll event and an element's scoll event</h1>
+			</div>		
+		</div>
+	</div>
+	
+	<script type="text/javascript">
+
+	</script>
+
+	<hr-->
+
+	<div class="container">
+		<div class="row">
+			<h1>2. Given numbers, calculate the sum</h1>
+
+			<div class="col-xs-6">
+				<h2>First number:</h2>
+				<input id='first-number' type='number'>
+			</div>
+			<div class="col-xs-6">
+				<h2>Second number:</h2>
+				<input id='second-number' type='number'>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-12">
+				<button onclick='sumNumbers()' id='sum-btn' type='button' class='btn btn-primary pull-right'>Sum!</button>
+ 			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-12">
+				<p>Sum is: <b id='result'></b></p>
+ 			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript">
+
+	function sumNumbers(){
+
+		var firstNumberAsString,
+			secondNumberAsString,
+			firstNumber,
+			secondNumber;
+
+		// 1. get input
+		// get first number as string
+		firstNumberAsString = document.getElementById('first-number').value;
+		// get second number as string
+		secondNumberAsString = document.getElementById('second-number').value;
+
+		// 2. check input validity
+		//Check if both numbers are populated
+		if(!firstNumberAsString || !secondNumberAsString) {
+			alert('Please populate both numbers');
+			return;
+		}
+
+		// 3. process input
+		//cast string to integer
+		firstNumber = parseInt(firstNumberAsString);
+		secondNumber = parseInt(secondNumberAsString);
+
+		// 4. perform business logic
+		// sum numbers
+		var sum = firstNumber + secondNumber;
+
+		// 5. return result
+		// print result to HTML
+		document.getElementById('result').innerHTML = sum;
+
+	}
+
+	</script>
+
+	<hr>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12">
+				<h1>4. Given a set of name, create random couples</h1>
+			</div>		
+		</div>
+
+		<div class="row">
+			<div class="col-xs-12">
+
+				<input type='text' id='input-name'>
+
+				<button  id='randomize-btn' type='button' class='btn btn-danger pull-right' onclick='onRandomizeClick()'>Randomize!</button>
+				
+				<button  id='add-name' type='button' class='btn btn-primary pull-right' onclick='onAddNameClick()'>Add name</button>
+						
+			</div>	
+
+			<div class="col-xs-6">
+				<h2>Name list:</h2>
+				<ol id='names-list'>
+				</ol>
+						
+			</div>	
+			<div class="col-xs-6">
+				<h2>Couples:</h2>
+				<ol id='couples-list'>
+				</ol>
+						
+			</div>		
+		</div>
+	</div>
+	
+	<script type="text/javascript">
+
+	var names = [];
+
+	function onAddNameClick() {
+
+		var input,
+			name;
+
+		//get input text
+		input = document.getElementById('input-name');
+
+		//get input text value
+		name = input.value;
+
+		//check if name is empty string
+		//TODO
+
+		//add name to array (names)
+		names.push(name);
+
+		//remove empty values, remove duplicates
+		//TODO
+
+		//empty names list
+		var list = document.getElementById('names-list');
+		list.innerHTML = '';
+
+		//loop over names and create HTML elements
+		for (var j = 0; j < names.length; j++){
+			//create li element
+			var li = document.createElement('li');
+			li.innerHTML = names[j];
+
+			//append element to names list
+			list.appendChild(li);
+			
+		}		
+	
+	}
+
+	function onRandomizeClick() {
+
+		var shuffledNames = shuffle(names);
+
+		//empty names list
+		var list = document.getElementById('couples-list');
+		list.innerHTML = '';
+
+		//loop over names and create HTML elements
+		for (var j = 0; j < shuffledNames.length; j = j + 2){
+			//create li element
+			var li = document.createElement('li');
+			li.innerHTML = shuffledNames[j] + ' - ' + shuffledNames[j + 1] ;
+
+			//append element to names list
+			list.appendChild(li);
+			
+		}
+
+	}
+
+	function shuffle(array) {
+	  var currentIndex = array.length, temporaryValue, randomIndex;
+
+	  // While there remain elements to shuffle...
+	  while (0 !== currentIndex) {
+
+	    // Pick a remaining element...
+	    randomIndex = Math.floor(Math.random() * currentIndex);
+	    currentIndex -= 1;
+
+	    // And swap it with the current element.
+	    temporaryValue = array[currentIndex];
+	    array[currentIndex] = array[randomIndex];
+	    array[randomIndex] = temporaryValue;
+	  }
+
+	  return array;
+	}
+
+	</script>
+
+	<hr>
+
+	<!--p id='demo' class='test'>This is the paragraph</p>
+
+	<p id='demo-1'  onclick='showAlert(this)'>This is the paragraph</p>
+
+	<p id='demo-2'  onclick='showAlert(this)'>This is the paragraph</p-->		
+
+</body>
+
+<script type="text/javascript">
+
+//1. Listen to window's scroll event and an element's scoll event
+
+//2. Given two input text elements, get the values and calculate the sum
+
+//3. Count how many click the user did on the HTML element
+
+//4. Given a set of name, create random couples
+
+//5. Change a input text to input button
+
+//6. Remove element on click
+
+//7. Return the children of the clicked element
+
+// ------------------------- --- --- --- ---
+
+function showAlert( obj ) {
+	obj.innerHTML = 'Nuovo contenuto';
+}
+function sayHello( obj ) {
+	alert('Hello!')
+}
+
+//addEventListener
+/*var container = document.getElementById('demo');
+container.addEventListener('click', sayHello, true);
+
+
+function showAlert( obj ) {
+	obj.innerHTML = 'Nuovo contenuto';
+}
+*/
+
+/*
+var container = document.getElementById('demo');
+//show alert when clicked
+container.onclick = showAlert;
+function showAlert() {
+	alert('Hello World!')
+}
+
+//change background color if mouseover
+container.onmouseover = function() {
+	container.style.backgroundColor = 'red';
+}
+
+//change background color if mouseover
+container.onmouseout = function() {
+	container.style.backgroundColor = 'white';
+}
+*/
+
+
+/*
+var container = document.getElementById('container');
+console.log(container);
+
+var content = container.getElementById('content');
+console.log(content);
+*/
+
+//change background-color to red
+/*
+var demo = document.getElementById('demo');
+demo.style.backgroundColor = 'red';
+demo.style.color = 'green';
+*/
+
+/*
+var demo = document.getElementById('demo');
+console.log(demo.innerHTML);
+demo.innerHTML = 'My new content';
+console.log(demo.innerHTML);
+*/
+
+//Use the querySelectorAll() method to find the <p> element and change its text to 'Hello World!'
+/*
+var demos = document.querySelectorAll('#demo');
+console.log(demos)
+*/
+
+//Use the getElementsByClassName() method to find the <p> element and change its text to 'Hello World!'
+/*
+var demos = document.getElementsByClassName('test');
+for (var i = 0; i < demos.length; i++){
+	demos[i].innerHTML = 'Hello World!';
+}
+*/
+
+//Use the getElementById() method to find the <p> element and change its text to 'Hello World!'
+
+/*
+var demo = document.getElementById('demo');
+console.log('getElementById', demo)
+demo.innerHTML = 'Hello World!';
+*/
+
+//Use the getElementsByTagName() method to find the <p> element and change its text to 'Hello World!'
+
+/*
+var demos = document.getElementsByTagName('p');
+console.log('getElementsByTagName', demos)
+for (var i = 0; i < demos.length; i++){
+	demos[i].innerHTML = 'Hello World!';
+}
+
+*/
+
+</script>
+
+</html>

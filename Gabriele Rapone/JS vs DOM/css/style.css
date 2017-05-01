@@ -1,0 +1,78 @@
+.container {
+    height: 120vh;
+    background-color: ;
+}
+
+.sitti {
+    padding-top: 100px;
+    transform: translate(-50%, -50%);
+    margin: 25% 50% 75% 50%;
+    display: inline-block;
+}
+
+#element {
+    border: none;
+    box-shadow: 5px 5px 50px rgba(0, 0, 0, 0.05), -5px -5px 50px rgba(0, 0, 0, 0.05);
+}
+
+#windowInter {
+    position: fixed;
+    top: 20px;
+    font-size: 24pt;
+    color: black;
+    padding: 20px 15px;
+}
+
+#formInter {
+    position: fixed;
+    top: 60px;
+    font-size: 24pt;
+    color: black;
+    padding: 20px 15px;
+}
+
+#reset {
+    position: fixed;
+    top: 130px;
+    left: 50%;
+}
+
+#reset-counter {
+    position: fixed;
+    top: 100px;
+    font-size: 24pt;
+    color: black;
+    padding: 20px 15px;
+}
+
+.backg-1 {
+    background-color: aqua;
+}
+
+.backg-2 {
+    background-color: beige;
+}
+
+.pop-up {
+    background-color: antiquewhite;
+    position: relative;
+    top: -870px;
+    display: inline-block;
+}
+
+h1 {
+    padding: 10px;
+}
+
+.pop-up span {
+    position: absolute;
+    top: -12px;
+    left: -10px;
+    padding: 3px 8px;
+    font-size: 14pt;
+    border-radius: 50px;
+    background-color: red;
+    color: white;
+    font-weight: 900;
+    cursor: pointer;
+}

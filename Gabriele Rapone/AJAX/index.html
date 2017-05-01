@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title></title>
+	<!--<link rel="stylesheet" href="style/style.min.css">-->
+	<link rel="stylesheet" href="style/style.min.css"> </head>
+
+<body>
+	<div id="boxFather">
+		<!--NAVBAR starts here-->
+		<div id="navBar">
+			<p>nosense</p>
+		</div>
+		<!--NAVBAR ends here-->
+		<!--side AND content starts here-->
+		<div id="sideAndContent">
+			<!--SIDEBAR starts here-->
+			<div id="sideBar">
+				<div class="box-list">
+					<ul>
+						<li id="users">Users</li>
+						<li id="comments">Comments</li>
+						<li id="albums">Albums</li>
+						<li id="photos">Photos</li>
+					</ul>
+				</div>
+			</div>
+			<!--SIDEBAR ends here-->
+			<!--CONTENTBAR starts here-->
+			<div id="contentBar">
+				<div id="wrapper">
+					<h1></h1>
+					<div id="container"></div>
+				</div>
+			</div>
+			<!--CONTENT ends here-->
+		</div>
+		<!--side AND content ends here-->
+	</div>
+	<!--BOXFATHER ends here-->
+	<!--<script src="script/js.min.js"></script>-->
+	<script src="script/handlebars-v4.0.5.js"></script>
+	<script src="script/js.js"></script>
+	<script id="entry-template" type="text/x-handlebars-template">
+		<div class="cards-space">
+			<div class="user-card">
+				<div class="name"><img src="assets/name.svg">
+					<h1>{{name}}</h1> </div>
+				<div class="phone"><img src="assets/phone.svg">
+					<h2>{{phone}}</h2></div>
+				<div class="email"> <img src="assets/email.svg">
+					<h3>{{email}}</h3></div>
+			</div>
+		</div>
+	</script>
+	<!--<script src="script/jquery-3.2.0.min.js"></script>-->
+</body>
+
+</html>

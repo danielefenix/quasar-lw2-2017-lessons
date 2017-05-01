@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="">
+    <style>
+        body {
+            font-family: helvetica;
+            width: 80%;
+            margin: 0 auto;
+        }
+        
+        #tab {
+            background-color: rgba(0, 0, 0, 0);
+        }
+        
+        p {
+            border-radius: 5px;
+            padding: 15px 20px;
+            background-color: rgba(0, 0, 0, 0.05);
+            transition: all 250ms cubic-bezier(1, 0, 0, 1);
+            position: relative;
+        }
+        
+        p:hover {
+            background-color: rgba(0, 0, 0, 0.1);
+        }
+        
+        span {
+            width: 20px;
+            height: 20px;
+            Position: absolute;
+            transform: translate(-50%, -50%);
+            right: 20px;
+            top: 50%;
+            font-weight: 800;
+            cursor: pointer;
+        }
+        
+        #closebtn {
+            display: block;
+        }
+        
+        #tab text {
+            display: none;
+        }
+        
+        #add {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="form-box">
+        <h1>Add passenger</h1>
+        <form>
+            <input type="text" name="lname" id="name" onclick="this.select()">
+            <input type="button" value="Add" onclick="addToList()" id="add">
+            <input type="button" value="Clear" onclick="clearArr()"> </form>
+    </div>
+    <div id="tab"></div>
+    <script src="scripts/myjs.js"></script>
+</body>
+
+</html>
